@@ -1,174 +1,257 @@
-/*Local Fonts*/
-/* pt-sans-regular - latin_cyrillic */
-@font-face {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('PT Sans'), local('PTSans-Regular'),
-         url('../fonts/ptsans.woff2') format('woff2'), 
-         url('../fonts/ptsans.woff') format('woff'),
-  }
-  /* pt-sans-700 - latin_cyrillic */
-  @font-face {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local('PT Sans Bold'), local('PTSans-Bold'),
-         url('../fonts/ptsansbold.woff2') format('woff2'), 
-         url('../fonts/ptsansbold.woff') format('woff'), 
-  }
-  /*Custom Colors*/
-:root {
-    --basic-black: #000000;
-    --light-blue: #81B3D3;
-    --light-grey: #EEEEEE;
-    --light-brown: #766357;
-    --border-color-grey: #E5E5E5;
-    --rate-color-grey-bg: #F2F2F2; /* цвет фона рейтинга*/
-    --rate-color-grey-txt: #666666; /* цвет текста рейтинга*/
-    /* action colors */
-    --ligt-grey-up: #CACACA; /* цвет стрелки вверх рейтинга*/
-    --darker-brown: #604E43; /* изменение коричневого цвета при наведении на него */
-    --thedarkest-brown: #503E33; /* нажатие на клавишу коричневого цвета*/
-    --black-brown: #6A6A6A; /* */
-    --darker-grey: #F2F2F2; /* цвет фона формы в покое*/
-    --the-darkest-grey: #EBEBEB; /* цвет фона формы при наведении*/
-    --white: #FFFFFF; /* */
-    --middle-grey: #A9A9A9; /* цвет иконки "календаря" в покое */
-    --light-blue-sc: #81B3D2; /* цвет кнопок каталога*/
-    --darker-blue: #669EC0; /* цвет кнопок при наведении*/
-    --the-darkest-blue: #5496BD; /* при нажатии */
-    --light-black: #231F20; /* цвет логотипа в футере*/
-    --point-grey: #ABABAB; /* цвет точки в форме заполнения*/
-}
-.page-body {
-        min-width: 1200px;
-        margin: 0;
-        padding: 0;
-        font-family: "PT Sans", Arial, sans-serif;
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-        color: var(--basic-black);
-        text-transform: uppercase;
-        background-color: var(--white);
-        background-position: top center;
-        background-repeat: no-repeat;
-
-}
-.site-navigation a {
-  text-decoration: none;
-  color: var(--basic-black);
-}
-.site-navigation li {
-  list-style: none;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
-}
-h1.main-title {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-}
-.features h2 {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-}
-.main-features-list li {
-  list-style: none;
-}
-.main-features-list .first
- {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  background-color: var(--light-blue);
-  color: var(--white);
-}
-
-/**ul.second-features-list{
-}
-.second-features-list .one {
-  text-align: left;
-}
-.second-features-list .two {
-  text-align: center;
-}
-.second-features-list .three {
-  text-align: right;
-}**/
-p.feature {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 21px;
-}
-p.motel {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-}
-.main-features-list .second
- {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  text-align: left;
-  background-color: var(--light-blue);
-  color: var(--white);
-}
-
-  .second-features-list {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 26px;
-    background-color: var(--white);
-    color: var(--basic-black);
-  }
-  .main-features-list h3 {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 21px;
-  }
-  h2.interested {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 24px;
-  }
-  button.button-search{
-    width: 568px;
-    height: 86px;
-    font-size: 21px;
-    line-height: 26px;
-    color: var(--white);
-    background-color: var(--light-brown);
-    text-transform: uppercase;
-  }
-  div.visit {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-  }
-  a.footer-phone {
-    text-decoration: none;
-    color: var(--basic-black);
-  }
-  .footer-social a{
-    text-decoration: none;
-    color: var(--basic-black);
-  }
-  .footer-copyright a{
-    text-decoration: none;
-    color: var(--basic-black);
-  }
-
-
-  button.button-search:hover{
-    background-color: var(--darker-brown);
-  }
-
-  button.button-search:focus{
-    background-color: var(--thedarkest-brown);
-    color:  rgb(255, 255, 255, 0.5);
-  }
+ /*Custom Colors*/
+ 
+ :root {
+     --basic-black: #000000;
+     --light-blue: #81B3D3;
+     --light-grey: #EEEEEE;
+     --light-brown: #766357;
+     --border-color-grey: #E5E5E5;
+     --rate-color-grey-bg: #F2F2F2;
+     /* цвет фона рейтинга*/
+     --rate-color-grey-txt: #666666;
+     /* цвет текста рейтинга*/
+     /* action colors */
+     --ligt-grey-up: #CACACA;
+     /* цвет стрелки вверх рейтинга*/
+     --darker-brown: #604E43;
+     /* изменение коричневого цвета при наведении на него */
+     --thedarkest-brown: #503E33;
+     /* нажатие на клавишу коричневого цвета*/
+     --black-brown: #6A6A6A;
+     /* */
+     --darker-grey: #F2F2F2;
+     /* цвет фона формы в покое*/
+     --the-darkest-grey: #EBEBEB;
+     /* цвет фона формы при наведении*/
+     --white: #FFFFFF;
+     /* */
+     --semi-black: rgb(0, 0, 0, 0.5);
+     --semi-white: rgb(255, 255, 255, 0.5);
+     --middle-grey: #A9A9A9;
+     /* цвет иконки "календаря" в покое */
+     --light-blue-sc: #81B3D2;
+     /* цвет кнопок каталога*/
+     --darker-blue: #669EC0;
+     /* цвет кнопок при наведении*/
+     --the-darkest-blue: #5496BD;
+     /* при нажатии */
+     --light-black: #231F20;
+     /* цвет логотипа в футере*/
+     --point-grey: #ABABAB;
+     /* цвет точки в форме заполнения*/
+ }
+ 
+ a {
+     text-decoration: none;
+     color: var(--basic-black);
+ }
+ 
+ .hotels {
+     color: var(--light-brown);
+ }
+ 
+ .list-reset {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+ 
+ .page-body {
+     min-width: 1200px;
+     margin: 0;
+     padding: 0;
+     font-family: "PT Sans", "Arial", sans-serif;
+     font-size: 14px;
+     line-height: 21px;
+     font-weight: 400;
+     color: var(--basic-black);
+     text-transform: uppercase;
+     background-color: var(--white);
+ }
+ 
+ .main-nav-list li {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 26px;
+ }
+ 
+ .main-title {
+     font-weight: 700;
+     font-size: 21px;
+     line-height: 26px;
+ }
+ 
+ .features h2 {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 26px;
+ }
+ 
+ .features-list .blue {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 26px;
+     background-color: var(--light-blue);
+     color: var(--white);
+ }
+ 
+ .features-list .grey {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 26px;
+     background-color: var(--light-grey);
+     color: var(--basic-black);
+ }
+ 
+ .feature-item-title {
+     font-weight: 700;
+     font-size: 21px;
+     line-height: 21px;
+ }
+ 
+ .feature-item-text {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 21px;
+ }
+ 
+ .features-inner-list {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 26px;
+     background-color: var(--white);
+     color: var(--basic-black);
+ }
+ 
+ .main-features-list h3 {
+     font-weight: 700;
+     font-size: 21px;
+     line-height: 21px;
+ }
+ 
+ .hotels-search-title {
+     font-weight: 700;
+     font-size: 30px;
+     line-height: 24px;
+ }
+ 
+ .hotels-search-button {
+     font-size: 21px;
+     line-height: 26px;
+     color: var(--white);
+     background-color: var(--light-brown);
+     text-transform: uppercase;
+ }
+ 
+ .results {
+     font-weight: 700;
+     font-size: 21px;
+     line-height: 26px;
+ }
+ 
+ .category li {
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 18px;
+ }
+ 
+ .price {
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 18px;
+     color: var(--light-blue-sc)
+ }
+ 
+ .type,
+ .rate {
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 18px;
+     color: var(--semi-black);
+     text-decoration: underline dotted;
+     text-decoration-color: var(--darker-blue);
+ }
+ 
+ .up {
+     color: var(--ligt-grey-up);
+ }
+ 
+ .down {
+     color: var(--light-blue-sc);
+ }
+ /** Карточка отеля **/
+ 
+ .search-item {
+     border-top: 1px solid var(--border-color-grey);
+     border-bottom: 1px solid var(--border-color-grey);
+ }
+ 
+ .item-title {
+     font-weight: 700;
+     font-size: 21px;
+     line-height: 26px;
+ }
+ 
+ .item-type {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 21px;
+ }
+ 
+ .item-rate {
+     background-color: var(--rate-color-grey-bg);
+ }
+ 
+ .button-information {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 21px;
+     color: var(--white);
+     background-color: var(--light-blue);
+ }
+ 
+ .button-choose {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 21px;
+     color: var(--white);
+     background-color: var(--light-brown);
+ }
+ 
+ .visit {
+     font-weight: 700;
+     font-size: 21px;
+     line-height: 26px;
+ }
+ 
+ .footer-phone {
+     text-decoration: none;
+     color: var(--basic-black);
+ }
+ 
+ .button-information:hover {
+     background-color: var(--darker-blue);
+ }
+ 
+ .button-information:focus {
+     background-color: var(--the-darkest-blue);
+     color: var(--semi-white);
+ }
+ 
+ .button-choose:hover {
+     background-color: var(--darker-brown);
+ }
+ 
+ .button-choose:focus {
+     background-color: var(--thedarkest-brown);
+     color: var(--semi-white);
+ }
+ 
+ .hotels-search-button:hover {
+     background-color: var(--darker-brown);
+ }
+ 
+ .hotels-search-button:focus {
+     background-color: var(--thedarkest-brown);
+     color: var(--semi-white);
+ }
