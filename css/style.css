@@ -45,7 +45,7 @@ a {
     text-decoration: none;
 }
 
-a:active {
+.main-nav-link:active {
     color: var(--darker-brown);
 }
 
