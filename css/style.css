@@ -1,258 +1,273 @@
-     /*Custom Colors*/
-     
-      :root {
-         --basic-black: #000000;
-         --light-blue: #81B3D3;
-         --light-grey: #EEEEEE;
-         --light-brown: #766357;
-         --border-color-grey: #E5E5E5;
-         --rate-color-grey-bg: #F2F2F2;
-         /* цвет фона рейтинга*/
-         --rate-color-grey-txt: #666666;
-         /* цвет текста рейтинга*/
-         /* action colors */
-         --ligt-grey-up: #CACACA;
-         /* цвет стрелки вверх рейтинга*/
-         --darker-brown: #604E43;
-         /* изменение коричневого цвета при наведении на него */
-         --thedarkest-brown: #503E33;
-         /* нажатие на клавишу коричневого цвета*/
-         --black-brown: #6A6A6A;
-         /* */
-         --darker-grey: #F2F2F2;
-         /* цвет фона формы в покое*/
-         --the-darkest-grey: #EBEBEB;
-         /* цвет фона формы при наведении*/
-         --white: #FFFFFF;
-         /* */
-         --semi-black: rgb(0, 0, 0, 0.5);
-         --semi-white: rgb(255, 255, 255, 0.5);
-         --middle-grey: #A9A9A9;
-         /* цвет иконки "календаря" в покое */
-         --light-blue-sc: #81B3D2;
-         /* цвет кнопок каталога*/
-         --darker-blue: #669EC0;
-         /* цвет кнопок при наведении*/
-         --the-darkest-blue: #5496BD;
-         /* при нажатии */
-         --light-black: #231F20;
-         /* цвет логотипа в футере*/
-         --point-grey: #ABABAB;
-         /* цвет точки в форме заполнения*/
-     }
-     
-     a {
-         text-decoration: none;
-     }
-     
-     .main-nav-link a {
-         color: var(--basic-black);
-     }
-     
-     .social-link {
-         color: var(--basic-black);
-     }
-     
-     .hotels-sorting-link {
-         color: var(--basic-black);
-     }
-     
-     .hotel-card-title a {
-         color: var(--basic-black);
-     }
-     
-     a.academy {
-         color: var(--basic-black);
-     }
-     
-     .list-reset {
-         margin: 0;
-         padding: 0;
-         list-style: none;
-     }
-     
-     .page-body {
-         min-width: 1200px;
-         margin: 0;
-         padding: 0;
-         font-family: "PT Sans", "Arial", sans-serif;
-         font-size: 14px;
-         line-height: 21px;
-         font-weight: 400;
-         color: var(--basic-black);
-         text-transform: uppercase;
-         background-color: var(--white);
-     }
-     
-     .main-nav-list li {
-         font-weight: 700;
-         font-size: 14px;
-         line-height: 26px;
-         color: var(--basic-black);
-     }
-     
-     .main-title {
-         font-weight: 700;
-         font-size: 21px;
-         line-height: 26px;
-     }
-     
-     .features h2 {
-         font-weight: 400;
-         font-size: 14px;
-         line-height: 26px;
-     }
-     
-     .features-list li {
-         font-weight: 400;
-         font-size: 14px;
-         line-height: 26px;
-     }
-     
-     .features-list .blue {
-         background-color: var(--light-blue);
-         color: var(--white);
-     }
-     
-     .features-list .grey {
-         background-color: var(--light-grey);
-         color: var(--basic-black);
-     }
-     
-     .features-inner-list {
-         background-color: var(--white);
-         color: var(--basic-black);
-     }
-     
-     .feature-item-title {
-         font-weight: 700;
-         font-size: 21px;
-         line-height: 21px;
-     }
-     
-     .main-features-list h3 {
-         font-weight: 700;
-         font-size: 21px;
-         line-height: 21px;
-     }
-     
-     .hotels-search-title {
-         font-weight: 700;
-         font-size: 30px;
-         line-height: 24px;
-     }
-     
-     .hotels-search-button {
-         font-size: 21px;
-         line-height: 26px;
-         color: var(--white);
-         background-color: var(--light-brown);
-         text-transform: uppercase;
-     }
-     
-     .hotels-result-label {
-         font-weight: 700;
-         font-size: 21px;
-         line-height: 26px;
-     }
-     
-     .hotels-sorting-list li {
-         font-weight: 400;
-         font-size: 12px;
-         line-height: 18px;
-     }
-     
-     .hotels-sorting-list li:first-child a {
-         color: var(--light-blue-sc);
-     }
-     
-     .hotels-sorting-list li:nth-child(2) a,
-     .hotels-sorting-list li:nth-child(3) a {
-         color: var(--semi-black);
-         text-decoration: underline dotted;
-         text-decoration-color: var(--basic-black);
-     }
-     
-     .asc {
-         color: var(--ligt-grey-up);
-     }
-     
-     .desc {
-         color: var(--light-blue-sc);
-     }
-     /** Карточка отеля **/
-     
-     .hotels-result-item {
-         border-top: 1px solid var(--border-color-grey);
-         border-bottom: 1px solid var(--border-color-grey);
-     }
-     
-     .hotel-card-title {
-         font-weight: 700;
-         font-size: 21px;
-         line-height: 26px;
-     }
-     
-     .hotel-card-tag {
-         font-weight: 400;
-         font-size: 14px;
-         line-height: 21px;
-     }
-     
-     .hotel-card-rate {
-         background-color: var(--rate-color-grey-bg);
-     }
-     
-     .hotel-card-button-more {
-         font-weight: 700;
-         font-size: 14px;
-         line-height: 21px;
-         color: var(--white);
-         background-color: var(--light-blue);
-     }
-     
-     .hotel-card-button-book {
-         font-weight: 700;
-         font-size: 14px;
-         line-height: 21px;
-         color: var(--white);
-         background-color: var(--light-brown);
-     }
-     
-     .visit {
-         font-weight: 700;
-         font-size: 21px;
-         line-height: 26px;
-     }
-     
-     .footer-phone {
-         text-decoration: none;
-         color: var(--basic-black);
-     }
-     
-     .hotel-card-button-more:hover {
-         background-color: var(--darker-blue);
-     }
-     
-     .hotel-card-button-more:focus {
-         background-color: var(--the-darkest-blue);
-         color: var(--semi-white);
-     }
-     
-     .hotel-card-button-book:hover {
-         background-color: var(--darker-brown);
-     }
-     
-     .hotel-card-button-book:focus {
-         background-color: var(--thedarkest-brown);
-         color: var(--semi-white);
-     }
-     
-     .hotels-search-button:hover {
-         background-color: var(--darker-brown);
-     }
-     
-     .hotels-search-button:focus {
-         background-color: var(--thedarkest-brown);
-         color: var(--semi-white);
-     }
+/*Custom Colors*/
+
+:root {
+    --basic-black: #000000;
+    --light-blue: #81B3D3;
+    --light-grey: #EEEEEE;
+    --light-brown: #766357;
+    --border-color-grey: #E5E5E5;
+    --rate-color-grey-bg: #F2F2F2;
+    /* цвет фона рейтинга*/
+    --rate-color-grey-txt: #666666;
+    /* цвет текста рейтинга*/
+    /* action colors */
+    --ligt-grey-up: #CACACA;
+    /* цвет стрелки вверх рейтинга*/
+    --darker-brown: #604E43;
+    /* изменение коричневого цвета при наведении на него */
+    --thedarkest-brown: #503E33;
+    /* нажатие на клавишу коричневого цвета*/
+    --black-brown: #6A6A6A;
+    /* */
+    --darker-grey: #F2F2F2;
+    /* цвет фона формы в покое*/
+    --the-darkest-grey: #EBEBEB;
+    /* цвет фона формы при наведении*/
+    --white: #FFFFFF;
+    /* */
+    --semi-black: rgb(0, 0, 0, 0.5);
+    --semi-white: rgb(255, 255, 255, 0.5);
+    --middle-grey: #A9A9A9;
+    /* цвет иконки "календаря" в покое */
+    --light-blue-sc: #81B3D2;
+    /* цвет кнопок каталога*/
+    --darker-blue: #669EC0;
+    /* цвет кнопок при наведении*/
+    --the-darkest-blue: #5496BD;
+    /* при нажатии */
+    --light-black: #231F20;
+    /* цвет логотипа в футере*/
+    --point-grey: #ABABAB;
+    /* цвет точки в форме заполнения*/
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--darker-brown);
+}
+
+.main-nav-link {
+    color: var(--basic-black);
+}
+
+.social-link {
+    color: var(--basic-black);
+}
+
+.hotels-sorting-link {
+    color: var(--basic-black);
+}
+
+.hotel-card-title a {
+    color: var(--basic-black);
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--white);
+}
+
+.main-nav-list li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.features h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.features-list li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.features-list .blue {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+.features-list .grey {
+    background-color: var(--light-grey);
+    color: var(--basic-black);
+}
+
+.features-inner-list {
+    background-color: var(--white);
+    color: var(--basic-black);
+}
+
+.feature-item-title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+
+/**Форма поиска (начало) **/
+
+.hotels-search-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.hotels-search-button {
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--white);
+    background-color: var(--light-brown);
+    text-transform: uppercase;
+}
+
+.hotels-search-button:hover {
+    background-color: var(--darker-brown);
+}
+
+.hotels-search-button:focus {
+    background-color: var(--thedarkest-brown);
+    color: var(--semi-white);
+}
+
+
+/**Форма поиска (конец) **/
+
+
+/** Форма поиска отеля (начало)**/
+
+.hotels-result-label {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.hotels-sorting-list li {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.hotels-sorting-link {
+    color: var(--light-blue-sc);
+}
+
+.tag,
+.rate {
+    color: var(--semi-black);
+    text-decoration: underline dotted;
+    text-decoration-color: var(--basic-black);
+}
+
+.asc {
+    color: var(--ligt-grey-up);
+}
+
+.desc {
+    color: var(--light-blue-sc);
+}
+
+
+/** Форма поиска отеля (конец)**/
+
+
+/** Карточка отеля (начало) **/
+
+.hotels-result-item {
+    border-top: 1px solid var(--border-color-grey);
+    border-bottom: 1px solid var(--border-color-grey);
+}
+
+.hotel-card-title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.hotel-card-tag {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.hotel-card-rate {
+    background-color: var(--rate-color-grey-bg);
+}
+
+.hotel-card-button-more {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    background-color: var(--light-blue);
+}
+
+.hotel-card-button-book {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    background-color: var(--light-brown);
+}
+
+.hotel-card-button-more:hover {
+    background-color: var(--darker-blue);
+}
+
+.hotel-card-button-more:focus {
+    background-color: var(--the-darkest-blue);
+    color: var(--semi-white);
+}
+
+.hotel-card-button-book:hover {
+    background-color: var(--darker-brown);
+}
+
+.hotel-card-button-book:focus {
+    background-color: var(--thedarkest-brown);
+    color: var(--semi-white);
+}
+
+
+/** Карточка отеля (конец) **/
+
+.visit {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.academy-link {
+    color: var(--basic-black);
+}
+
+.footer-phone {
+    text-decoration: none;
+    color: var(--basic-black);
+}
