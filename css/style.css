@@ -125,11 +125,6 @@ a {
     color: var(--white);
 }
 
-.features-list .grey {
-    background-color: var(--light-grey);
-    color: var(--basic-black);
-}
-
 .features-inner-list {
     background-color: var(--white);
     color: var(--basic-black);
@@ -177,14 +172,15 @@ a {
     background-color: var(--grid-main-features-background);
 }
 
-.bridge-pic {
+.feature-bar-sc .feature-picture {
     order: -1;
 }
 
-.sc-list {
+.features-list-grey {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: var(--grid-main-features-background);
+    background-color: var(--light-grey);
+    color: var(--basic-black);
 }
 
 .page-footer {
