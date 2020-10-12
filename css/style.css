@@ -40,6 +40,12 @@
     --point-grey: #ABABAB;
     /* цвет точки в форме заполнения*/
     --footer-background: rgba(255, 255, 255, 0.9);
+    /* цвета фона грида*/
+    --grid-header-background: rgba(175, 240, 210, 0.9);
+    --grid-main-features-background: rgba(245, 173, 139, 0.9);
+    --grid-iner-text-background: rgba(151, 208, 218, 0.9);
+    --grid-footer-background: rgba(117, 192, 136, 0.9);
+    --grid-social-background: rgba(240, 241, 145, 0.9);
 }
 
 a {
@@ -83,6 +89,8 @@ a {
     color: var(--basic-black);
     text-transform: uppercase;
     background-color: var(--white);
+    min-height: 100%;
+    display: grid;
 }
 
 .main-nav-list li {
@@ -130,6 +138,125 @@ a {
     font-size: 21px;
     line-height: 21px;
 }
+
+
+/** оформление страницы (начало)**/
+
+.page {
+    height: 100%;
+}
+
+.main-nav {
+    display: grid;
+    width: 1200px;
+}
+
+.container {
+    display: grid;
+    width: 1200px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main-nav-logo {
+    justify-self: center;
+    background-color: var(--grid-header-background);
+}
+
+.main-title {
+    justify-self: center;
+}
+
+.welcome {
+    justify-self: center;
+}
+
+.features h2 {
+    justify-self: center;
+}
+
+.inner-text {
+    grid-column-start: 1;
+}
+
+.feature-bar {
+    display: grid;
+    width: 1200;
+    grid-template-columns: 400px auto;
+    height: 256px;
+    background-color: var(--grid-main-features-background);
+}
+
+.city-pic {
+    grid-column-start: 2;
+}
+
+.features-inner-list {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 400px 400px 400px;
+    height: 330px;
+    background-color: var(--grid-iner-text-background);
+}
+
+.feature-bar-sc {
+    display: grid;
+    width: 1200;
+    grid-template-columns: 800px 400px;
+    height: 256px;
+    background-color: var(--grid-main-features-background);
+}
+
+.bridge-pic {
+    grid-column-start: 1;
+}
+
+.inner-text-sc {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.sc-list {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 400px 400px 400px;
+    height: 330px;
+    background-color: var(--grid-main-features-background);
+}
+
+.page-footer {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 400px 400px 400px;
+    background-color: var(--grid-footer-background);
+}
+
+.social-list {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--grid-social-background);
+}
+
+.hotels-search {
+    display: grid;
+    width: 1200px;
+}
+
+.hotels-search-title {
+    justify-self: center;
+}
+
+.hotels-search-description {
+    justify-self: center;
+}
+
+.hotels-search-button {
+    justify-self: center;
+}
+
+
+/** оформление страницы (конец)**/
 
 
 /**Форма поиска (начало) **/
