@@ -149,7 +149,6 @@ a {
 
 .container {
     width: 1200px;
-    justify-self: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -158,6 +157,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: var(--grid-main-features-background);
+}
+
+.features-list li .grey {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .features-inner-list {
@@ -174,13 +178,6 @@ a {
 
 .feature-bar-sc .feature-picture {
     order: -1;
-}
-
-.features-list-grey {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: var(--light-grey);
-    color: var(--basic-black);
 }
 
 .page-footer {
